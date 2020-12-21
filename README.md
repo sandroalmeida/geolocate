@@ -3,7 +3,12 @@ Java / Spark / Swagger API example - Return geo location for an ip address infor
 
 ## Tips
 This project is a base Java Maven Project, so for the first use all the Maven dependencies need to be updated.
-In the resources folder the file config.properties has the apiKey required to access the third party api from https://app.ipgeolocation.io/
+
+## IPgeolocation
+In the resources folder the file CONFIG.PROPERTIES has the apiKey required to access the third party api from https://app.ipgeolocation.io/
+
+## Model
+The class LocationProperty is the model for the locations return properties, not all the properties from the ipgeolocation are implemented, but it is easy to implement, just add a new property using the same name from the api return.
 
 ## Starting
 The Apache Spark is the Rest API framework so for starting it is necessary to execute the main method on the class GeoLocate.
